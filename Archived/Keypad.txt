@@ -1,0 +1,12 @@
+Ard - Keypad
+2 - dig in 8
+3 - dig in 9
+4 - dig in 10
+5 - dig in 11
+6 - dig in 12
+7 - dig in 13
+8 - dig in 7
+
+Looking Key Side Up (Left to Right)
+
+http://www.arduino.cc/playground/Code/Keypad

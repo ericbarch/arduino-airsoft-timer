@@ -1,0 +1,74 @@
+//SparkFun Matrix KeyPad Decode
+
+#define COL0 3
+#define COL1 1
+#define COL2 5
+
+#define ROW0 2
+#define ROW1 7
+#define ROW2 6
+#define ROW3 4
+
+#define C0R0 1
+#define C0R1 4
+#define C0R2 7
+#define C0R3 10 //*
+#define C1R0 2
+#define C1R1 5
+#define C1R2 8
+#define C1R3 0
+#define C2R0 3
+#define C2R1 6
+#define C2R2 9
+#define C2R3 11 //#
+
+int debouncePin(int input) {
+	delay(25);
+
+	if (pin(input) == HIGH) {
+		while (pin(input) == HIGH){}
+		return 1;
+	}
+
+	return 0;
+}
+
+void scanKeyPad() {
+	//Drive COL1 Low
+	//Drive COL2 Low
+	//Drive COL0 High
+	if (debouncePin(ROW0))
+		return C0R0;
+	else if (debouncePin(ROW1))
+		return C0R1;
+	else if (debouncePin(ROW2))
+		return C0R2;
+	else if (debouncePin(ROW3))
+		return C0R3;
+	else {
+		//Drive COL0 Low
+		//Drive COL1 High
+	}
+	if (debouncePin(ROW0))
+		return C1R0;
+	else if (debouncePin(ROW1))
+		return C1R1;
+	else if (debouncePin(ROW2))
+		return C1R2;
+	else if (debouncePin(ROW3))
+		return C1R3;
+	else {
+		//Drive COL1 Low
+		//Drive COL2 High
+	}
+	if (debouncePin(ROW0))
+		return C2R0;
+	else if (debouncePin(ROW1))
+		return C2R1;
+	else if (debouncePin(ROW2))
+		return C2R2;
+	else if (debouncePin(ROW3))
+		return C2R3;
+	else
+		return 13;
+}

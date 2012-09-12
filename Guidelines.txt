@@ -1,0 +1,5 @@
+Game Type
+-------------
+Assault - arm/disarm code
+Defend - disarm code (clock starts at beginning of game)
+Capture - team1/team2 code (2 timers counting down)

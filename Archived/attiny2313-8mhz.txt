@@ -1,0 +1,5 @@
+avrdude -c usbtiny -p t2313 -v -U lfuse:w:0xE4:m
+
+VS the original of:
+
+0x64

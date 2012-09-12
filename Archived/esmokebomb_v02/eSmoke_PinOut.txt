@@ -1,0 +1,45 @@
+eSmoke v0.1 Pin Connections
+
+Ex:
+
+M20 = Microcontroller Pin 20
+D16 = Display Pin 16
+- = Connection Wire
+
+Display
+--------
+(A)M3-D16-(D11)
+(B)M6-D15-(D10)
+(C)M2-D3-(D8)
+(D)M5-D2-(D6)
+(E)M4-D1-(D5)
+(F)M17-D18-(D12)
+(G)M18-D17-(D7)
+(DP)M19-D4-(D9)
+(DGND1)M8-D14
+(DGND2)M9-D13
+
+
+Resistors
+---------
+(GND)M10-RES-M16
+(GND)M10-RES-M15
+(GND)M10-RES-M14
+(GND)M10-RES-M13
+(GND)M10-RES-M12
+
+Buzzer
+---------
+(GND)M10-BUZZ-M11
+
+LED
+---------
+(GND)M10-LED-M7
+
+Switches
+---------
+(VCC)M20-KEY-M16
+(VCC)M20-SW4-M15
+(VCC)M20-SW3-M14
+(VCC)M20-SW2-M13
+(VCC)M20-SW1-M12
